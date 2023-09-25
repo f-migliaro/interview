@@ -11,7 +11,7 @@ import java.util.UUID;
 @Repository
 public class CustomerRepository {
 
-    public List<Customer> findCustomers(String customerPublicId) {
+    public List<Customer> findCustomersByCategory(String category) {
         Item item1 = new Item(UUID.randomUUID().toString(), BigDecimal.ONE, "Tooth paste", 2);
         Item item2 = new Item(UUID.randomUUID().toString(), BigDecimal.ONE, "Soap", 1);
 
@@ -24,6 +24,7 @@ public class CustomerRepository {
             .lastName("Mc Fly")
             .phone("(555) 555-5555")
             .items(items)
+            .category("VIP")
             .build();
 
         Customer customer2 = Customer.builder()
@@ -33,6 +34,7 @@ public class CustomerRepository {
             .lastName("Brown")
             .phone("(555) 555-1111")
             .items(items)
+            .category("REGULAR")
             .build();
 
         return List.of(customer1, customer2);

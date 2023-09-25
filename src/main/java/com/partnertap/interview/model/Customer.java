@@ -15,4 +15,5 @@ public class Customer {
     String lastName;
     String phone;
     List<Item> items;
+    String category;
 }
