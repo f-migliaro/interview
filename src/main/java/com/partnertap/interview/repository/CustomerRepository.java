@@ -37,6 +37,16 @@ public class CustomerRepository {
             .category("REGULAR")
             .build();
 
-        return List.of(customer1, customer2);
+        Customer customer3 = Customer.builder()
+            .internalId(1L)
+            .publicId(UUID.randomUUID().toString())
+            .firstName("John")
+            .lastName("Doe")
+            .phone("(555) 555-2222")
+            .items(items)
+            .category("REGULAR")
+            .build();
+
+        return List.of(customer1, customer2, customer3);
     }
 }
