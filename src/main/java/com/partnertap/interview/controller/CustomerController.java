@@ -1,7 +1,7 @@
 package com.partnertap.interview.controller;
 
-import com.partnertap.interview.record.Item;
-import com.partnertap.interview.record.UpdateCustomer;
+import com.partnertap.interview.record.ItemDto;
+import com.partnertap.interview.record.UpdateCustomerDto;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,7 +13,7 @@ public class CustomerController {
 
     // Complete with the corresponding HTTP request mapping.
     // Both price & customerPublicId are mandatory parameters in the request.
-    public List<Item> getCustomerItemsWithPriceGreaterThan(String customerPublicId, double price) {
+    public List<ItemDto> getCustomerItemsWithPriceGreaterThan(String customerPublicId, double price) {
         // Complete with the method's body and a proper return value and status code.
         return null;
     }
@@ -25,7 +25,7 @@ public class CustomerController {
     }
 
     // Complete with the corresponding HTTP request mapping.
-    public void updateCustomer(UpdateCustomer updateCustomer) {
+    public void updateCustomer(UpdateCustomerDto updateCustomerDto) {
         // Complete with the method's body and the corresponding response status code.
     }
 }
